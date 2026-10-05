@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemorragias del 3.er trimestre del embarazo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header id="topbar">
+  <button id="btn-index" type="button">Índice</button>
+  <span id="counter">1 / 1</span>
+  <button id="btn-full" type="button">Pantalla completa</button>
+</header>
+
+<nav id="index-panel" hidden>
+  <h2>Índice</h2>
+  <ol id="index-list"></ol>
+</nav>
+
+<progress id="progress" value="0" max="100"></progress>
+
+<main id="deck">
+
+<!-- 1. PORTADA -->
+<section class="slide" data-title="Portada">
+  <h1>Hemorragias del 3.er trimestre del embarazo</h1>
+  <h2>Seminario de cuidados de enfermería</h2>
+  <p>Integrantes: Nicolle, Natalia, Sara, Erika y Michelle</p>
+  <p>Docente: Juliana Riaño</p>
+  <p>Fecha: 6/10/2026</p>
+</section>
+
+<!-- 2. CONTENIDO -->
+<section class="slide" data-title="Contenido">
+  <h2>Contenido</h2>
+  <ol>
+    <li>Generalidades e importancia clínica</li>
+    <li>Causas y factores de riesgo</li>
+    <li>Placenta previa</li>
+    <li>Desprendimiento prematuro de placenta (DPP)</li>
+    <li>Diferencias entre placenta previa y DPP</li>
+    <li>Signos de alarma, valoración y exámenes</li>
+    <li>Tratamiento según la causa</li>
+    <li>Cuidados de enfermería, educación y prevención</li>
+    <li>Caso clínico y quiz</li>
+    <li>Referencias</li>
+  </ol>
+</section>
+
+<!-- 3. DEFINICIÓN -->
+<section class="slide" data-title="¿Qué son?">
+  <h2>1. ¿Qué son las hemorragias del 3.er trimestre?</h2>
+  <ul>
+    <li>Todo sangrado genital desde la semana 28 hasta el final del embarazo (según algunas fuentes, desde la semana 22–24), antes o durante el parto.</li>
+    <li><strong>Incidencia:</strong> 2–5% de los embarazos (aprox. 4% según otras fuentes).</li>
+    <li><strong>Emergencia obstétrica hasta demostrar lo contrario:</strong> cualquier sangrado, por escaso que parezca, se considera patológico y potencialmente grave.</li>
+    <li>El 80% tiene origen placentario; el resto procede del canal del parto o es de causa indeterminada.</li>
+    <li>Las dos causas principales: <strong>placenta previa</strong> y <strong>desprendimiento prematuro de placenta</strong>.</li>
+    <li>Incluso el sangrado de causa desconocida se asocia a mayor morbilidad materna y resultado perinatal adverso: parto prematuro, muerte fetal y retraso del crecimiento intrauterino.</li>
+  </ul>
+  <p><strong>Regla de oro en urgencias:</strong> "todo sangrado del tercer trimestre se considera una placenta previa hasta que se demuestre lo contrario".</p>
+</section>
+
+<!-- 4. IMPORTANCIA -->
+<section class="slide" data-title="Importancia clínica">
+  <h2>2. Importancia clínica</h2>
+  <div class="cols">
+    <div>
+      <h3>Consecuencias maternas</h3>
+      <ul>
+        <li>Anemia grave y necesidad de transfusión de hemoderivados</li>
+        <li>Coagulopatía de consumo / CID</li>
+        <li>Shock hipovolémico, fallo multiorgánico y muerte materna</li>
+        <li>Riesgo de histerectomía obstétrica (la placenta previa es la 2.ª causa más frecuente)</li>
+        <li>Infección, hospitalización prolongada y secuelas psicológicas</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Consecuencias fetales y neonatales</h3>
+      <ul>
+        <li>Prematuridad iatrogénica (finalización urgente del embarazo)</li>
+        <li>Hipoxia, restricción del crecimiento y bajo peso al nacer</li>
+        <li>Muerte fetal o perinatal: el DPP puede alcanzar 10–30% de mortalidad perinatal</li>
+        <li>Vasa previa: mortalidad fetal de hasta 50–95% sin manejo adecuado</li>
+      </ul>
+    </div>
+  </div>
+  <p><strong>Relevancia:</strong> es una de las tres grandes causas de mortalidad materna en el mundo. Exige valoración inmediata en un centro hospitalario con capacidad de atención materno-fetal.</p>
+</section>
+
+<!-- 5. CAUSAS -->
+<section class="slide" data-title="Causas">
+  <h2>3. Causas de hemorragia del 3.er trimestre</h2>
+  <p>Además de la placenta previa y el DPP, otras causas son (clic para ver el detalle):</p>
+  <details><summary>Vasa previa</summary><p>Vasos fetales en las membranas, desprotegidos de placenta o cordón, que cruzan el orificio cervical interno. Su ruptura es mortal para el feto por exanguinación si no se actúa de inmediato.</p></details>
+  <details><summary>Rotura uterina</summary><p>Rotura completa de todas las capas del útero; más frecuente en mujeres con antecedente de cesárea.</p></details>
+  <details><summary>Rotura prematura de membranas (RPM)</summary><p>Sangrado escaso asociado a pérdida de líquido amniótico.</p></details>
+  <details><summary>Expulsión del tapón mucoso</summary><p>Causa más frecuente en gestantes a término; no conlleva compromiso materno ni fetal.</p></details>
+  <details><summary>Traumatismo genital</summary><p>Lesión directa del tracto genital como origen del sangrado.</p></details>
+  <details><summary>Rotura del seno marginal de la placenta</summary><p>Poco frecuente; puede producir sangrado en una placenta de inserción aparentemente normal.</p></details>
+  <details><summary>Amenaza de parto prematuro</summary><p>Las contracciones y los cambios cervicales pueden producir sangrado ligero y confundirse con formas leves de DPP.</p></details>
+  <details><summary>Lesiones del cuello uterino y canal del parto</summary><p>Pólipos, erosiones, ectopia, lesiones tumorales y várices vaginales, vulvares o cervicales.</p></details>
+  <details><summary>Hemorragia fetomaterna</summary><p>Paso de sangre fetal a la circulación materna. Poco frecuente, pero puede relacionarse con compromiso fetal: se asoció a disminución de movimientos fetales o cardiotocografía no tranquilizadora.</p></details>
+  <details><summary>Causa desconocida</summary><p>Se asocia a los peores resultados perinatales.</p></details>
+</section>
+
+<!-- 6. FACTORES DE RIESGO GENERALES -->
+<section class="slide" data-title="Factores de riesgo">
+  <h2>4. Factores de riesgo (generales)</h2>
+  <details open><summary>A. Factores maternos</summary>
+    <ul>
+      <li>Edad &gt; 35 años</li>
+      <li>Multiparidad / gran multiparidad</li>
+      <li>Tabaquismo y consumo de sustancias (cocaína)</li>
+      <li>Obesidad</li>
+      <li>Hipertensión, preeclampsia, enfermedades vasculares</li>
+      <li>Trombofilias, anemia</li>
+      <li>Enfermedades del tejido conectivo (Ehlers-Danlos)</li>
+    </ul>
+  </details>
+  <details><summary>B. Factores obstétricos</summary>
+    <ul>
+      <li>Cicatrices uterinas: cesáreas previas, miomectomía, legrados (riesgo de placenta previa, rotura uterina y acretismo)</li>
+      <li>Antecedente de placenta previa o DPP (recurrencia hasta 10 veces)</li>
+      <li>Gestación múltiple</li>
+      <li>Reproducción asistida</li>
+      <li>Polihidramnios y macrosomía (sobredistensión uterina)</li>
+      <li>Rotura prematura de membranas</li>
+      <li>Intervalo intergenésico &lt; 18 meses</li>
+    </ul>
+  </details>
+  <details><summary>C. Factores fetales</summary>
+    <ul>
+      <li>Presentación anómala</li>
+      <li>Macrosomía / feto grande</li>
+      <li>Gestación múltiple</li>
+    </ul>
+  </details>
+  <details><summary>D. Otros factores</summary>
+    <ul>
+      <li>Trauma abdominal (accidente, caída, agresión): desencadenante clásico de DPP</li>
+      <li>Origen étnico (raza asiática o negra: mayor riesgo de placenta previa)</li>
+      <li>Nivel socioeconómico bajo</li>
+      <li>Uso inadecuado de oxitócicos o maniobras en el parto</li>
+    </ul>
+  </details>
+</section>
+
+<!-- ============ PLACENTA PREVIA ============ -->
+<section class="slide" data-title="Placenta previa: definición">
+  <h2>5. Placenta previa — Definición</h2>
+  <ul>
+    <li>Alteración de la implantación placentaria: la placenta se desarrolla en el <strong>segmento inferior del útero</strong>, con el borde cerca del orificio cervical interno (OCI) o cubriéndolo parcial o totalmente.</li>
+    <li>Cobra importancia en la segunda mitad del embarazo, cuando el segmento inferior se distiende y el cuello se modifica: puede haber separación de tejido placentario y lesión de vasos maternos, con hemorragia vaginal.</li>
+    <li><strong>Diferencia con el DPP:</strong> el problema no es la separación de una placenta bien implantada, sino su localización anormalmente baja.</li>
+    <li>Manifestación característica: <strong>sangrado vaginal, generalmente sin dolor abdominal</strong>.</li>
+    <li>Epidemiología: 1 de cada 200 gestaciones.</li>
+  </ul>
+</section>
+
+<section class="slide" data-title="Placenta previa: clasificación">
+  <h2>Placenta previa — Clasificación</h2>
+  <p>Se clasifica según la relación entre el borde placentario y el OCI, medida por ecografía.</p>
+  <table>
+    <thead><tr><th>Término</th><th>Descripción</th></tr></thead>
+    <tbody>
+      <tr><td>Placenta previa</td><td>El tejido placentario cubre parcial o totalmente el OCI.</td></tr>
+      <tr><td>Placenta de inserción baja</td><td>El borde está cerca del OCI, pero sin cubrirlo.</td></tr>
+    </tbody>
+  </table>
+  <p>Los términos antiguos (total, parcial, marginal e inserción baja) aparecen en textos previos; hoy se prefiere describir la distancia en ecografía entre el borde placentario y el OCI.</p>
+</section>
+
+<section class="slide" data-title="Placenta previa: factores de riesgo">
+  <h2>Placenta previa — Factores de riesgo</h2>
+  <ul>
+    <li>Antecedente de placenta previa</li>
+    <li>Cesáreas y otras cirugías uterinas previas (cicatrices o cambios del endometrio que alteran el sitio de implantación)</li>
+    <li>Multiparidad</li>
+    <li>Edad materna avanzada</li>
+    <li>Embarazo múltiple</li>
+    <li>Técnicas de reproducción asistida</li>
+    <li>Tabaquismo y otros factores que afectan la vascularización placentaria</li>
+  </ul>
+  <p>No son causa directa en todos los casos: aumentan la probabilidad de que la placenta se implante en el segmento inferior.</p>
+</section>
+
+<section class="slide" data-title="Placenta previa: fisiopatología">
+  <h2>Placenta previa — Fisiopatología</h2>
+  <p>En un embarazo normal, la placenta se implanta en el cuerpo uterino y se relaciona con la decidua y los vasos maternos. En la placenta previa se implanta en el segmento inferior, que se distiende y adelgaza al crecer el feto; la placenta no se adapta al estiramiento y se producen pequeñas áreas de separación que lesionan vasos maternos.</p>
+  <ol class="flow">
+    <li>Implantación placentaria baja</li>
+    <li>Crecimiento y distensión del segmento inferior</li>
+    <li>Cambios cervicales</li>
+    <li>Separación parcial del tejido placentario</li>
+    <li>Lesión de vasos maternos</li>
+    <li>Hemorragia vaginal</li>
+  </ol>
+  <p>El sangrado puede repetirse porque los cambios uterinos continúan. Si la pérdida es importante: disminución del volumen circulante, anemia, hipotensión y, en casos graves, shock hipovolémico. Además, disminuye la perfusión útero-placentaria y compromete la oxigenación fetal.</p>
+</section>
+
+<section class="slide" data-title="Placenta previa: signos y síntomas">
+  <h2>Placenta previa — Signos y síntomas</h2>
+  <ul>
+    <li><strong>Sangrado vaginal rojo brillante, de inicio súbito e indoloro</strong>, en la segunda mitad del embarazo; puede repetirse.</li>
+    <li>Puede aparecer espontáneamente o relacionarse con cambios cervicales y contracciones.</li>
+    <li>La ausencia de dolor la diferencia del DPP. El útero permanece blando, sin hipertonía.</li>
+    <li>Si hay trabajo de parto pueden aparecer contracciones y dolor.</li>
+  </ul>
+  <h3>Si la hemorragia es significativa</h3>
+  <ul>
+    <li>Taquicardia, hipotensión, palidez, debilidad, mareo, diaforesis</li>
+    <li>Alteración del estado de conciencia y signos de shock hipovolémico</li>
+    <li>Alteraciones de la frecuencia cardíaca fetal</li>
+  </ul>
+  <p><strong>Alerta:</strong> cualquier sangrado vaginal en la segunda mitad del embarazo es un signo de alarma y requiere valoración obstétrica.</p>
+</section>
+
+<section class="slide" data-title="Placenta previa: diagnóstico">
+  <h2>Placenta previa — Diagnóstico</h2>
+  <ul>
+    <li><strong>Ecografía:</strong> identifica la localización placentaria y su relación con el OCI.</li>
+    <li><strong>Ecografía transvaginal:</strong> mide con más precisión la distancia entre el borde placentario y el OCI; más sensible que la abdominal y segura cuando se hace correctamente (no aumenta el riesgo de sangrado).</li>
+    <li>Valoración del estado hemodinámico materno, cantidad y características del sangrado, edad gestacional y frecuencia cardíaca fetal.</li>
+    <li>Laboratorio: hemograma, grupo sanguíneo y Rh, pruebas cruzadas si hay riesgo de transfusión y pruebas de coagulación si la hemorragia es importante.</li>
+  </ul>
+  <p><strong>NO realizar tacto vaginal digital hasta descartar placenta previa por ecografía:</strong> la manipulación cervical puede lesionar la placenta y desencadenar o aumentar la hemorragia.</p>
+</section>
+
+<section class="slide" data-title="Placenta previa: complicaciones">
+  <h2>Placenta previa — Complicaciones</h2>
+  <div class="cols">
+    <div>
+      <h3>Maternas</h3>
+      <ul>
+        <li>Hemorragia anteparto: anemia, hipovolemia, shock hemorrágico y necesidad de transfusión</li>
+        <li>Mayor riesgo de hemorragia posparto (el segmento inferior se contrae menos)</li>
+        <li>Espectro de placenta accreta, sobre todo con placenta previa sobre cicatriz de cesárea: la placenta se adhiere anormalmente al miometrio y es difícil de separar</li>
+        <li>Riesgo de histerectomía</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Fetales</h3>
+      <ul>
+        <li>Prematuridad por finalización del embarazo debido a la hemorragia</li>
+        <li>Alteraciones de la frecuencia cardíaca fetal</li>
+        <li>Compromiso fetal severo y muerte fetal en hemorragias graves</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Placenta previa: manejo">
+  <h2>Placenta previa — Manejo</h2>
+  <p>Depende de cantidad y recurrencia del sangrado, estabilidad materna, edad gestacional, condición fetal y relación de la placenta con el OCI.</p>
+  <details open><summary>1. Valoración inicial del episodio de sangrado</summary>
+    <ul>
+      <li>Vía aérea, respiración y circulación; signos vitales; cuantificar sangrado</li>
+      <li>Monitorización fetal cuando la edad gestacional lo permite</li>
+      <li>Acceso venoso, líquidos y medicamentos</li>
+      <li>Hemograma, grupo y Rh, pruebas cruzadas</li>
+      <li>Si la pérdida es importante: líquidos IV y componentes sanguíneos (glóbulos rojos, plasma, plaquetas)</li>
+    </ul>
+  </details>
+  <details><summary>2. Manejo expectante (madre y feto estables, sangrado leve o cesado)</summary>
+    <ul>
+      <li>Vigilancia estrecha para prolongar el embarazo hasta menor riesgo neonatal</li>
+      <li>Control de nuevos sangrados y del bienestar fetal</li>
+      <li>Plan preparado para el nacimiento</li>
+    </ul>
+  </details>
+  <details><summary>3. Medicamentos</summary>
+    <ul>
+      <li><strong>Corticoides antenatales</strong> (betametasona): maduración pulmonar fetal si hay riesgo de parto prematuro; disminuyen la tensión superficial alveolar.</li>
+      <li><strong>Sulfato de magnesio</strong> para neuroprotección fetal si se anticipa parto muy prematuro.</li>
+      <li><strong>Inmunoglobulina anti-D</strong> en gestantes Rh negativas con sangrado.</li>
+      <li><strong>Tocolíticos:</strong> no de rutina. Solo en casos seleccionados (sangrado leve, madre y feto estables, amenaza de parto prematuro) para completar los corticoides. Nunca para retrasar la finalización si hay hemorragia importante, inestabilidad o compromiso fetal.</li>
+    </ul>
+  </details>
+  <details><summary>4. Finalización del embarazo</summary>
+    <ul>
+      <li>Placenta que cubre el OCI: generalmente <strong>cesárea</strong> (el feto atravesaría la placenta).</li>
+      <li>Placenta de inserción baja: vía del parto individualizada según distancia al OCI, sangrado y condiciones materno-fetales.</li>
+      <li>Hemorragia abundante, inestabilidad materna o compromiso fetal: estabilizar a la madre y preparar simultáneamente la finalización urgente. No retrasar el nacimiento.</li>
+    </ul>
+  </details>
+  <p>Secuencia: hemorragia → valoración materno-fetal → reposición de volumen y corrección de anemia/coagulopatía → protección fetal si hay riesgo de prematuridad → vigilancia si ambos están estables → finalización cuando lo indiquen la hemorragia o el compromiso.</p>
+</section>
+
+<!-- ============ DPP ============ -->
+<section class="slide" data-title="DPP: definición">
+  <h2>6. Desprendimiento prematuro de placenta (DPP) — Definición</h2>
+  <ul>
+    <li>También llamado desprendimiento prematuro de placenta normoinserta (DPPNI) o <em>placental abruption</em>.</li>
+    <li>Separación parcial o completa de una placenta <strong>normalmente implantada</strong> antes del nacimiento del feto (después de la semana 20 y antes del parto).</li>
+    <li>Se rompe la interfaz placenta–decidua materna, con ruptura de vasos y formación de un <strong>hematoma retroplacentario</strong>. Al acumularse sangre, aumenta la separación y disminuye el intercambio de oxígeno y nutrientes materno-fetal.</li>
+    <li>Causa importante de hemorragia anteparto; compromete a la vez la estabilidad materna y el bienestar fetal.</li>
+    <li>ACOG: separación placentaria del útero con sangrado, oculto o vaginal, antes del nacimiento, con o sin compromiso materno o fetal.</li>
+    <li>Mortalidad fetal cercana al 20%. Es una urgencia obstétrica que puede requerir finalización inmediata.</li>
+  </ul>
+</section>
+
+<section class="slide" data-title="DPP: clasificación">
+  <h2>DPP — Clasificación</h2>
+  <h3>A. Según la presentación del sangrado</h3>
+  <details open><summary>DPP revelado o externo</summary>
+    <ul>
+      <li>La sangre sale por la vagina: hemorragia visible, de cantidad variable.</li>
+      <li>Puede haber dolor abdominal.</li>
+      <li>La sangre visible no siempre representa la pérdida total.</li>
+    </ul>
+  </details>
+  <details><summary>DPP oculto (concealed)</summary>
+    <ul>
+      <li>La sangre queda entre la placenta y la pared uterina (hematoma retroplacentario).</li>
+      <li>Poco o ningún sangrado vaginal; puede haber dolor intenso e hipertonía uterina.</li>
+      <li>Deterioro materno importante pese a sangrado visible escaso: riesgo de subestimar la pérdida.</li>
+    </ul>
+  </details>
+  <details><summary>DPP mixto</summary>
+    <ul><li>Una parte de la sangre queda detrás de la placenta y otra sale por la vagina.</li></ul>
+  </details>
+  <h3>B. Según la gravedad clínica</h3>
+  <table>
+    <thead><tr><th>Grado</th><th>Características</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>Asintomático; se identifica al examinar la placenta tras el nacimiento.</td></tr>
+      <tr><td>1 (leve)</td><td>Sangrado ausente o escaso, sensibilidad uterina leve, madre estable, sin compromiso fetal.</td></tr>
+      <tr><td>2 (moderado)</td><td>Mayor sensibilidad uterina, alteraciones maternas, compromiso fetal; puede haber alteración de la coagulación.</td></tr>
+      <tr><td>3 (grave)</td><td>Desprendimiento severo, compromiso materno importante, coagulopatía y, en los más graves, muerte fetal.</td></tr>
+    </tbody>
+  </table>
+  <p>La gravedad clínica no debe confundirse con el tipo (revelado, oculto o mixto), que describe cómo se presenta el sangrado.</p>
+</section>
+
+<section class="slide" data-title="DPP: factores de riesgo">
+  <h2>DPP — Factores de riesgo</h2>
+  <p>No tiene una única causa: intervienen procesos vasculares, inflamatorios, trombóticos y mecánicos.</p>
+  <div class="cols">
+    <div>
+      <h3>Maternos y vasculares</h3>
+      <ul>
+        <li>Hipertensión crónica, gestacional, preeclampsia, eclampsia</li>
+        <li>Enfermedad vascular materna</li>
+        <li>Trombofilias</li>
+        <li>Diabetes pregestacional</li>
+        <li>Edad materna avanzada</li>
+        <li>Antecedente de DPP (principal factor de recurrencia)</li>
+      </ul>
+      <h3>Obstétricos</h3>
+      <ul>
+        <li>Embarazo múltiple, multiparidad</li>
+        <li>Rotura prematura de membranas</li>
+        <li>Polihidramnios y oligohidramnios</li>
+        <li>Restricción del crecimiento fetal</li>
+        <li>Enfermedad placentaria previa</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Traumáticos y mecánicos</h3>
+      <ul>
+        <li>Traumatismo abdominal, accidentes, golpe directo</li>
+        <li>Descompresión uterina rápida (salida del primer gemelo, pérdida rápida de líquido)</li>
+      </ul>
+      <h3>Sustancias y ambiente</h3>
+      <ul>
+        <li>Tabaquismo</li>
+        <li>Cocaína u otros estimulantes</li>
+        <li>Alcohol</li>
+        <li>Violencia interpersonal</li>
+      </ul>
+      <h3>Infecciosos / inflamatorios</h3>
+      <ul>
+        <li>Corioamnionitis</li>
+        <li>Procesos inflamatorios placentarios</li>
+      </ul>
+    </div>
+  </div>
+  <p>Tener un factor de riesgo no significa que se produzca un DPP, y en algunos casos no se identifica ninguno.</p>
+</section>
+
+<section class="slide" data-title="DPP: fisiopatología">
+  <h2>DPP — Fisiopatología</h2>
+  <ol class="flow">
+    <li>Factores predisponentes</li>
+    <li>Alteración vascular / inflamatoria</li>
+    <li>Lesión de vasos deciduales</li>
+    <li>Sangrado</li>
+    <li>Hematoma retroplacentario</li>
+    <li>Separación progresiva de la placenta</li>
+    <li>Menor intercambio materno-fetal</li>
+    <li>Hipoxia fetal y hemorragia materna</li>
+    <li>Complicaciones</li>
+  </ol>
+</section>
+
+<section class="slide" data-title="DPP: manifestaciones">
+  <h2>DPP — Manifestaciones maternas y fetales</h2>
+  <ul>
+    <li>Depende de la cantidad de placenta desprendida, la velocidad del desprendimiento y si la hemorragia es visible u oculta.</li>
+    <li><strong>Cuadro típico:</strong> sangrado vaginal + dolor uterino intenso + útero hipertónico + posible sufrimiento fetal.</li>
+    <li>Maternas: dolor abdominal, hipertonía y sensibilidad uterina, taquicardia, hipotensión, palidez, signos de shock.</li>
+    <li>Fetales: alteraciones de la frecuencia cardíaca (desaceleraciones, pérdida de variabilidad), disminución de movimientos fetales, sufrimiento o muerte fetal.</li>
+  </ul>
+  <p><strong>Clave:</strong> la gravedad materna puede ser mayor que la que aparenta el sangrado vaginal, sobre todo en hemorragia oculta.</p>
+</section>
+
+<section class="slide" data-title="DPP: diagnóstico">
+  <h2>DPP — Diagnóstico</h2>
+  <p>Es principalmente <strong>clínico</strong>; ninguna prueba lo descarta de forma absoluta. Sospechar ante: dolor abdominal + sangrado vaginal ± contracciones/hipertonía ± alteraciones de la FCF.</p>
+  <details open><summary>A. Historia clínica</summary>
+    <p>Edad gestacional; inicio, características y cantidad del sangrado; dolor; contracciones; movimientos fetales; hipertensión o preeclampsia; DPP previo; traumatismo abdominal; embarazo múltiple; rotura de membranas; tabaco y sustancias; otros factores.</p>
+  </details>
+  <details><summary>B. Valoración materna</summary>
+    <p>Presión arterial, frecuencia cardíaca y respiratoria, saturación de oxígeno, estado de conciencia, perfusión periférica, cantidad de sangrado, dolor, tono y sensibilidad uterina, diuresis.</p>
+  </details>
+  <details><summary>C. Valoración fetal</summary>
+    <p>Frecuencia cardíaca fetal, variabilidad, desaceleraciones, contracciones, movimientos fetales y bienestar según edad gestacional. La cardiotocografía puede mostrar distintos patrones de compromiso según la magnitud del desprendimiento.</p>
+  </details>
+  <details><summary>D. Ecografía obstétrica</summary>
+    <p>Sirve para localizar la placenta, descartar placenta previa, evaluar al feto y, a veces, identificar el hematoma retroplacentario. <strong>Una ecografía normal no descarta un DPP</strong>: si la clínica es muy sugestiva, no se descarta por la ausencia de hematoma.</p>
+  </details>
+  <details><summary>E. Laboratorios</summary>
+    <p>Hemograma, hemoglobina y hematocrito, plaquetas, TP, TTP, fibrinógeno, grupo sanguíneo, pruebas de compatibilidad, función renal y electrolitos. El <strong>fibrinógeno</strong> es clave en hemorragia importante porque puede disminuir en la coagulopatía asociada al DPP.</p>
+  </details>
+</section>
+
+<section class="slide" data-title="DPP: complicaciones">
+  <h2>DPP — Complicaciones</h2>
+  <div class="cols">
+    <div>
+      <h3>Maternas</h3>
+      <ol>
+        <li><strong>Hemorragia severa</strong>, en parte oculta tras la placenta</li>
+        <li><strong>Shock hemorrágico</strong>: hipovolemia y mala perfusión de órganos</li>
+        <li><strong>Coagulopatía y CID</strong>: consumo de factores de coagulación</li>
+        <li><strong>Anemia</strong></li>
+        <li><strong>Insuficiencia renal</strong> por hipovolemia e hipoperfusión</li>
+        <li><strong>Útero de Couvelaire</strong>: sangre infiltrada en el miometrio, aspecto violáceo</li>
+        <li><strong>Transfusión</strong> y procedimientos obstétricos urgentes</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Fetales y neonatales</h3>
+      <ol>
+        <li><strong>Hipoxia fetal</strong></li>
+        <li><strong>Acidosis fetal</strong></li>
+        <li><strong>Restricción del crecimiento</strong></li>
+        <li><strong>Prematuridad</strong></li>
+        <li><strong>Muerte fetal</strong> en desprendimientos graves</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARATIVA ============ -->
+<section class="slide" data-title="Placenta previa vs DPP">
+  <h2>7. Diferencias: placenta previa vs DPP</h2>
+  <table id="compare">
+    <thead>
+      <tr><th>Característica</th><th>Placenta previa</th><th>DPP (DPPNI)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Qué ocurre</td><td>Inserción total o parcial en el segmento inferior; puede ocluir el OCI</td><td>Separación aguda, parcial o completa, de una placenta normoinserta</td></tr>
+      <tr><td>Frecuencia</td><td>1 de cada 200 gestaciones</td><td>Urgencia obstétrica con ~20% de mortalidad fetal</td></tr>
+      <tr><td>Sangrado</td><td>Rojo brillante, súbito, repetitivo</td><td>Visible, oculto o mixto; no refleja la pérdida real</td></tr>
+      <tr><td>Dolor</td><td>Indoloro</td><td>Dolor abdominal intenso</td></tr>
+      <tr><td>Tono uterino</td><td>Normal (útero blando)</td><td>Hipertonía, útero sensible</td></tr>
+      <tr><td>Repercusión fetal</td><td>Sin repercusión inicial (si no hay hemorragia importante)</td><td>Frecuente: hipoxia, sufrimiento o muerte fetal</td></tr>
+      <tr><td>Diagnóstico</td><td>Ecografía (transvaginal)</td><td>Clínico; ecografía normal no lo descarta</td></tr>
+      <tr><td>Tacto vaginal</td><td>Contraindicado hasta descartarla</td><td>—</td></tr>
+      <tr><td>Parto</td><td>Cesárea si cubre el OCI; individualizar si es de inserción baja</td><td>Cesárea si hay sufrimiento fetal o inestabilidad; inducción si es leve y feto estable</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ SIGNOS DE ALARMA ============ -->
+<section class="slide" data-title="Signos de alarma">
+  <h2>8. Signos de alarma</h2>
+  <p>Ante cualquier hemorragia del tercer trimestre se evalúa: edad gestacional, cantidad de sangrado (especuloscopia) y compromiso materno (signos vitales, hemograma, coagulación y grupo sanguíneo).</p>
+  <ul>
+    <li>Sangrado vaginal abundante o que aumenta</li>
+    <li>Sangrado con dolor abdominal intenso</li>
+    <li>Dolor uterino o aumento del tono uterino</li>
+    <li>Mareo, debilidad, palidez, sudoración, taquicardia o hipotensión</li>
+    <li>Disminución o ausencia de movimientos fetales</li>
+    <li>Alteraciones de la frecuencia cardíaca fetal</li>
+    <li>Contracciones frecuentes asociadas al sangrado</li>
+    <li>Sospecha de rotura de membranas o signos de trabajo de parto</li>
+    <li>Antecedente de cesárea u otra cirugía uterina con dolor y sangrado (riesgo de rotura uterina)</li>
+  </ul>
+  <p><strong>Signos de alarma mayores:</strong> taquicardia materna (uno de los primeros signos de alteración hemodinámica), sufrimiento fetal en la monitorización, dolor abdominal brusco e inestabilidad hemodinámica.</p>
+  <p>La guía colombiana indica que la placenta previa se maneja como urgencia y que tanto ella como el DPP requieren atención hospitalaria, especialmente en centros de alta complejidad.</p>
+</section>
+
+<section class="slide" data-title="Valoración materno-fetal">
+  <h2>Valoración materna y fetal</h2>
+  <p>Valoración inicial rápida y dirigida: estado de la madre y bienestar fetal.</p>
+  <div class="cols">
+    <div>
+      <h3>Materna</h3>
+      <ul>
+        <li>Signos vitales: PA, FC, FR, estado general</li>
+        <li>Intensidad y características del sangrado</li>
+        <li>Presencia o ausencia de dolor abdominal</li>
+        <li>Tono y sensibilidad uterina</li>
+        <li>Estado de conciencia y signos de hipovolemia o shock</li>
+        <li>Antecedentes obstétricos: cesáreas o cirugías uterinas</li>
+        <li>Vía venosa y recursos para reposición de líquidos y sangre</li>
+        <li>Hemoclasificación, prueba cruzada y hemograma</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Fetal</h3>
+      <ul>
+        <li>Frecuencia cardíaca fetal</li>
+        <li>Movimientos fetales</li>
+        <li>Actividad uterina</li>
+        <li>Monitorización cardiotocográfica si está indicada</li>
+        <li>Ecografía obstétrica</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Exámenes y monitorización">
+  <h2>Exámenes y monitorización</h2>
+  <table>
+    <thead><tr><th>Examen</th><th>Utilidad</th></tr></thead>
+    <tbody>
+      <tr><td>Ecografía transvaginal</td><td>Principal método diagnóstico de placenta previa; más sensible que la abdominal y sin aumentar el riesgo de sangrado</td></tr>
+      <tr><td>Cardiotocografía (RCTG)</td><td>Bienestar fetal y dinámica uterina</td></tr>
+      <tr><td>Hemograma</td><td>Hemoglobina, hematocrito e impacto de la pérdida sanguínea</td></tr>
+      <tr><td>Plaquetas y coagulación</td><td>Hemorragia significativa o sospecha de alteración de la coagulación; CID en DPP grave</td></tr>
+      <tr><td>Hemoclasificación y prueba cruzada</td><td>Preparar sangre ante posible transfusión</td></tr>
+      <tr><td>Citofluorometría</td><td>Detecta hemorragia fetomaterna leve a moderada, incluso cuando la velocidad pico sistólica de la arteria cerebral media no es informativa</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="slide" data-title="¿Cuándo es una emergencia?">
+  <h2>¿Cuándo se considera una emergencia?</h2>
+  <ul>
+    <li><strong>Placenta previa:</strong> siempre urgencia, con manejo hospitalario en institución de alta complejidad. Si la hemorragia es intensa o hay pérdida del bienestar fetal: cesárea.</li>
+    <li><strong>DPP con feto vivo y sufrimiento:</strong> prácticamente siempre termina en cesárea. Si la hemorragia compromete el estado hemodinámico materno o fetal, se finaliza la gestación sin importar la edad gestacional.</li>
+    <li><strong>Rotura uterina:</strong> pensar en inestabilidad hemodinámica súbita; aunque el sangrado vaginal sea escaso puede haber hemorragia intraabdominal importante.</li>
+    <li><strong>Vasa previa:</strong> la ruptura es letal para el feto en más del 75% de los casos por exanguinación si no se actúa de inmediato.</li>
+    <li><strong>Gestantes Rh negativas</strong> con hemorragia relevante: gammaglobulina anti-D.</li>
+  </ul>
+</section>
+
+<!-- ============ TRATAMIENTO ============ -->
+<section class="slide" data-title="Manejo inicial">
+  <h2>9. Tratamiento — Manejo inicial (primeros minutos a 1 hora)</h2>
+  <p>Objetivo: estabilizar a la madre, monitorizar continuamente al feto y definir vía y momento del parto según etiología y gravedad.</p>
+  <ol>
+    <li><strong>Evaluación rápida y triage:</strong> signos vitales, palidez, taquicardia, hipotensión, dolor uterino, dinámica uterina, cantidad de sangrado y bienestar fetal.</li>
+    <li><strong>Accesos y reanimación:</strong> dos vías venosas periféricas de buen calibre; cristaloides (suero salino o Ringer); preparar hemoderivados si hay hipovolemia o sangrado activo importante.</li>
+    <li><strong>Exámenes inmediatos:</strong> grupo y Rh, Coombs indirecto, hemograma con plaquetas, TP/INR, fibrinógeno, función renal y electrolitos; repetir si continúa el sangrado.</li>
+    <li><strong>Ecografía obstétrica urgente:</strong> localización placentaria, biofísico, líquido amniótico y signos de DPPNI (hematoma retroplacentario, oligoamnios).</li>
+    <li><strong>Monitorización fetal continua:</strong> RCTG para FCF y dinámica uterina.</li>
+    <li><strong>Precaución clave:</strong> no hacer examen digital vaginal hasta que la ecografía descarte placenta previa o vasa previa.</li>
+  </ol>
+</section>
+
+<section class="slide" data-title="Tratamiento según causa">
+  <h2>Tratamiento según la causa</h2>
+  <details open><summary>Placenta previa</summary>
+    <ul>
+      <li>Manejo hospitalario; reposo relativo o absoluto según sangrado; dieta absoluta si hay riesgo de cirugía inminente.</li>
+      <li>Sangrado activo severo o inestabilidad: reposición de volumen, hemoterapia y cesárea urgente.</li>
+      <li>Estable con sangrado leve: observación, corticoides si &lt; 34–36 semanas y cesárea electiva según protocolo.</li>
+      <li>Parto vaginal contraindicado en placenta previa oclusiva.</li>
+    </ul>
+  </details>
+  <details><summary>DPPNI</summary>
+    <ul>
+      <li>Cuadro típico: sangrado + dolor uterino intenso, útero hipertónico, posible sufrimiento fetal.</li>
+      <li>Estabilización hemodinámica, monitorización fetal continua y evaluación de la coagulación.</li>
+      <li>Parto inmediato (generalmente cesárea) si hay sufrimiento fetal, sangrado masivo o inestabilidad materna.</li>
+      <li>Si es leve y el feto está estable: puede considerarse inducción o parto vaginal según condiciones obstétricas.</li>
+    </ul>
+  </details>
+  <details><summary>Vasa previa</summary>
+    <ul>
+      <li>Sangrado fetal (a menudo tras rotura de membranas) con bradicardia fetal súbita.</li>
+      <li>Cesárea de emergencia inmediata con reanimación neonatal preparada.</li>
+    </ul>
+  </details>
+  <details><summary>Otras causas (parto, lesiones cervicovaginales, infección)</summary>
+    <ul>
+      <li>Valorar dinámica uterina y dilatación; si es parto, seguir el protocolo de atención del parto.</li>
+      <li>Lesiones locales: compresión, sutura o manejo ginecológico según el hallazgo.</li>
+    </ul>
+  </details>
+</section>
+
+<section class="slide" data-title="Intervenciones obstétricas">
+  <h2>Intervenciones obstétricas frecuentes</h2>
+  <ul>
+    <li><strong>Cesárea de emergencia:</strong> sangrado severo con compromiso materno/fetal, placenta previa oclusiva sintomática, DPPNI grave, vasa previa.</li>
+    <li><strong>Inducción del parto:</strong> DPPNI leve con feto estable y condiciones cervicales favorables, según criterio obstétrico.</li>
+    <li><strong>Taponamiento uterino / balón hidrostático:</strong> en hemorragia por atonía asociada (más común en posparto).</li>
+    <li><strong>Suturas de compresión (B-Lynch)</strong> y otras técnicas de ahorro uterino en hemorragia masiva por atonía.</li>
+    <li><strong>Histerectomía:</strong> último recurso en hemorragia incontrolable.</li>
+  </ul>
+</section>
+
+<section class="slide" data-title="Medicamentos clave">
+  <h2>Medicamentos clave</h2>
+  <table>
+    <thead><tr><th>Medicamento</th><th>Uso</th></tr></thead>
+    <tbody>
+      <tr><td>Corticoides (betametasona / dexametasona)</td><td>Maduración pulmonar fetal si &lt; 34–36 semanas y se anticipa parto prematuro</td></tr>
+      <tr><td>Sulfato de magnesio</td><td>Neuroprotección fetal si se anticipa parto muy prematuro</td></tr>
+      <tr><td>Tocolíticos (nifedipino, atosibán)</td><td>Solo casos seleccionados: amenaza de parto prematuro, sangrado leve y feto estable. Contraindicados en DPPNI significativo o sufrimiento fetal</td></tr>
+      <tr><td>Oxitocina</td><td>Manejo del parto/posparto y atonía; no se usa para "detener" el sangrado de placenta previa o DPPNI antes del parto</td></tr>
+      <tr><td>Hemoderivados</td><td>Concentrado de eritrocitos, plasma, crioprecipitado según pérdida y coagulación</td></tr>
+      <tr><td>Antibióticos</td><td>Rotura prematura de membranas o indicación obstétrica</td></tr>
+      <tr><td>Anti-D</td><td>Pacientes Rh negativas con sangrado, según protocolo</td></tr>
+    </tbody>
+  </table>
+  <p>La selección y la dosis deben seguir los protocolos institucionales y la valoración obstétrica individual.</p>
+</section>
+
+<!-- ============ ENFERMERÍA ============ -->
+<section class="slide" data-title="Prioridades de enfermería">
+  <h2>10. Prioridades de enfermería</h2>
+  <ol>
+    <li><strong>Estabilización hemodinámica materna:</strong> control estricto de TA, FC, FR y SatO₂; vigilar signos de shock.</li>
+    <li><strong>Control del sangrado:</strong> cuantificar (pesar compresas, medir en bolsa colectora), observar coágulos y reportar cambios.</li>
+    <li><strong>Monitorización fetal continua:</strong> RCTG, registrar FCF, variabilidad y desaceleraciones; comunicar alteraciones de inmediato.</li>
+    <li><strong>Administración segura de terapias:</strong> cristaloides, hemoderivados y medicamentos obstétricos; verificar alergias y compatibilidad.</li>
+    <li><strong>Prevención de complicaciones:</strong> trombosis (medias compresivas, movilización temprana si está indicada), infección y coagulopatía.</li>
+    <li><strong>Apoyo emocional</strong> y comunicación clara con la paciente y su familia.</li>
+  </ol>
+</section>
+
+<section class="slide" data-title="Monitorización materno-fetal">
+  <h2>Monitorización materno-fetal</h2>
+  <div class="cols">
+    <div>
+      <h3>Materna</h3>
+      <ul>
+        <li>TA, FC, FR y temperatura</li>
+        <li>Diuresis (sonda si es necesario) y balance hídrico</li>
+        <li>Signos de coagulopatía: sangrado de mucosas, petequias</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Fetal</h3>
+      <ul>
+        <li>RCTG continuo en sangrado activo</li>
+        <li>Biofísico fetal / ecografía según evolución</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Laboratorio seriado</h3>
+      <ul>
+        <li>Hemograma y plaquetas</li>
+        <li>TP/INR y fibrinógeno</li>
+        <li>Grupo y cruzado</li>
+        <li>Repetir según la evolución del sangrado</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-title="Educación">
+  <h2>Educación a la paciente y familia</h2>
+  <ul>
+    <li><strong>Reconocer signos de alarma:</strong> sangrado vaginal abundante, dolor uterino intenso, disminución de movimientos fetales, contracciones regulares, rotura de fuente.</li>
+    <li><strong>Acudir de inmediato</strong> a urgencias obstétricas ante cualquier sangrado del tercer trimestre.</li>
+    <li>Reposo relativo según indicación; evitar relaciones sexuales y tactos vaginales si hay placenta previa o sangrado reciente.</li>
+    <li>Adherencia a controles y medicamentos (corticoides, hierro si hay anemia).</li>
+    <li>Planificación del parto (cesárea programada en placenta previa).</li>
+  </ul>
+</section>
+
+<section class="slide" data-title="Prevención">
+  <h2>Prevención de complicaciones</h2>
+  <ul>
+    <li><strong>Detección temprana</strong> de placenta previa/DPPNI mediante ecografía y control prenatal.</li>
+    <li><strong>Manejo de factores de riesgo:</strong> hipertensión, tabaquismo, traumatismos, multiparidad y cesáreas previas.</li>
+    <li><strong>Preparación para hemorragia masiva:</strong> protocolos de código rojo, disponibilidad de hemoderivados y rol de enfermería en la reanimación.</li>
+    <li><strong>Profilaxis de tromboembolismo</strong> en reposo prolongado: medias, movilización temprana cuando sea seguro; heparina solo si hay alto riesgo y según criterio.</li>
+    <li><strong>Vigilancia de coagulopatía</strong> en DPPNI severo.</li>
+  </ul>
+</section>
+
+<!-- ============ CASO CLÍNICO ============ -->
+<section class="slide" data-title="Caso clínico">
+  <h2>11. Caso clínico (DPPNI — ejemplo didáctico)</h2>
+  <p><strong>Datos:</strong> gestante de 32 años, 34 semanas, con sangrado vaginal moderado y dolor abdominal intenso de 1 hora de evolución. TA 90/60 mmHg, FC 110 lpm, útero hipertónico, FCF 100 lpm con desaceleraciones tardías. Ecografía: hematoma retroplacentario sugestivo de DPPNI.</p>
+  <p>Antes de abrir cada bloque, piensa tu respuesta:</p>
+  <details><summary>¿Cuál es el diagnóstico más probable?</summary>
+    <p>DPPNI: dolor intenso + sangrado + hipertonía + sufrimiento fetal + hematoma retroplacentario en la ecografía.</p>
+  </details>
+  <details><summary>Manejo inicial</summary>
+    <ul>
+      <li>Dos vías venosas, cristaloides, grupo y cruzado, hemograma, TP/INR y fibrinógeno</li>
+      <li>RCTG continuo: patrón no tranquilizador</li>
+      <li>Preparar cesárea de emergencia por sufrimiento fetal y DPPNI</li>
+      <li>Transfusión de eritrocitos si persiste hipotensión/taquicardia y cae la hemoglobina</li>
+      <li>Corticoides si el tiempo lo permite antes del parto (según protocolo)</li>
+    </ul>
+  </details>
+  <details><summary>Cuidados de enfermería</summary>
+    <ul>
+      <li>Monitorizar TA, FC y diuresis cada 5–15 min en el preoperatorio y cuantificar el sangrado</li>
+      <li>Mantener el RCTG hasta la entrada a quirófano e informar cambios</li>
+      <li>Preparar quirófano, consentimiento, profilaxis antibiótica según protocolo y anti-D si es Rh negativa</li>
+      <li>Apoyo emocional y explicación breve del procedimiento a la paciente y su familia</li>
+    </ul>
+  </details>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="slide" data-title="Quiz">
+  <h2>12. Quiz final</h2>
+  <div id="quiz"></div>
+  <p id="quiz-score"></p>
+</section>
+
+<!-- ============ IDEAS CLAVE ============ -->
+<section class="slide" data-title="Ideas clave">
+  <h2>13. Ideas clave para recordar</h2>
+  <ol>
+    <li>Todo sangrado del tercer trimestre es una emergencia obstétrica hasta demostrar lo contrario.</li>
+    <li>Las dos causas principales son la placenta previa (sangrado rojo brillante, indoloro, útero blando) y el DPP (dolor, hipertonía, sufrimiento fetal).</li>
+    <li>No hacer tacto vaginal hasta descartar placenta previa por ecografía.</li>
+    <li>En el DPP el sangrado visible puede subestimar la gravedad, y una ecografía normal no lo descarta.</li>
+    <li>Estabilizar a la madre, monitorizar al feto y decidir la vía del parto según la causa y la gravedad.</li>
+    <li>Enfermería: vigilar signos vitales, cuantificar el sangrado, monitorizar al feto, educar y prevenir complicaciones.</li>
+  </ol>
+</section>
+
+<!-- ============ REFERENCIAS ============ -->
+<section class="slide" data-title="Referencias">
+  <h2>Referencias bibliográficas (APA 7.ª edición)</h2>
+  <ul class="refs">
+    <li>American College of Obstetricians and Gynecologists. (s. f.). <em>reVITALize: Obstetrics data definitions</em>. ACOG.</li>
+    <li>Aula de Ginecología. (2021). <em>Sangrado del tercer trimestre: diagnóstico diferencial</em>. https://aulaginecologia.com/wp-content/uploads/2021/12/DIAGNO%CC%81STICO-DIFERENCIAL-SANGRADO-3T-2.pdf</li>
+    <li>Brandt, J. S., &amp; Ananth, C. V. (2023). Placental abruption at near-term and term gestations: Pathophysiology, epidemiology, diagnosis, and management. <em>American Journal of Obstetrics &amp; Gynecology, 228</em>(5S), S1313–S1329. https://doi.org/10.1016/j.ajog.2022.06.059</li>
+    <li>Maldonado, M. D., Lombardía, J., Rodríguez, O., Rincón, P., &amp; Sánchez Dehesa, A. (2000). Hemorragias del tercer trimestre. <em>SEMERGEN, 26</em>(4), 192–195.</li>
+    <li>Ministerio de Salud de Colombia. (s. f.). <em>Guía de atención de las complicaciones hemorrágicas asociadas al embarazo</em>. https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/VS/PP/28Atencion%20de%20las%20hemorragias%20embarazo.PDF</li>
+    <li>Morilla Aragón, M. T., Romeu Martínez, M., &amp; Carmona de la Torre, M. V. (s. f.). <em>Actuación en urgencias ante hemorragia del 3er trimestre de gestación: placenta previa</em>. https://enfermeriadeurgencias.org/wp-content/uploads/hemorragia-tercer-trimestre-placenta-previa.pdf</li>
+    <li>Royal College of Obstetricians and Gynaecologists. (2011). <em>Antepartum haemorrhage</em> (Green-top Guideline No. 63). RCOG.</li>
+    <li>Schneider, E., &amp; Kinzler, W. L. (2025). Placental abruption: Pathophysiology, diagnosis, and management. <em>Clinical Obstetrics and Gynecology, 68</em>(1), 98–104. https://doi.org/10.1097/GRF.0000000000000903</li>
+    <li>Smith, C. D., &amp; Lee, A. (2024). Placental abruption. <em>BJA Education, 24</em>(9), 305–308. https://doi.org/10.1016/j.bjae.2024.05.001</li>
+    <li>StatPearls Publishing. (2025). Placental abruption. En <em>StatPearls</em>. StatPearls Publishing.</li>
+    <li>Surbek, D., et al. (2018). Mild-to-moderate foeto-maternal haemorrhage in the third trimester and at term of pregnancy: Quantitative determination and clinical-diagnostic evaluation. <em>Blood Transfusion, 16</em>(3), 302–308. https://pmc.ncbi.nlm.nih.gov/articles/PMC5919843/</li>
+  </ul>
+</section>
+
+</main>
+
+<footer id="controls">
+  <button id="btn-prev" type="button">Anterior</button>
+  <button id="btn-next" type="button">Siguiente</button>
+</footer>
+
+<script src="bg.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
